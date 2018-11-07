@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 import Express from 'express';
 import bodyParser from 'body-parser';
 import logger from 'morgan';
+import cors from 'cors';
 
 console.log(`You are running in a ${config.server.env} environment.`);
 
@@ -16,6 +17,9 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 // Initialize express app and router
 const app = new Express();
 const router = new Express.Router();
+
+// Enable CORS support
+app.use(cors());
 
 // Use x-www-form-urlencoded and json parsing
 app.use(bodyParser.urlencoded({extended: false}));
