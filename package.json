@@ -1,0 +1,20 @@
+{
+  "name": "login-example-server",
+  "version": "1.0.0",
+  "description": "Node.js server to handle login API requests",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silentapi/login-example-server.git"
+  },
+  "author": "Joe Winkler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silentapi/login-example-server/issues"
+  },
+  "homepage": "https://github.com/silentapi/login-example-server#readme"
+}

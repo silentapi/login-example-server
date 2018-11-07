@@ -1,2 +1,2 @@
 # login-example-server
-NodeJs server to handle login API requests
+Node.js server to handle login API requests
