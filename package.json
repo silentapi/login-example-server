@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha --require babel-core/register",
     "lint": "eslint --ignore-path .gitignore .",
-    "start": "nodemon --watch src/ --exec babel-node src/index.js"
+    "dev": "set NODE_ENV=DEV&& nodemon --watch src/ --exec babel-node src/index.js",
+    "start": "set NODE_ENV=PROD&& babel-node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
     "eslint-config-google": "^0.11.0",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.6"
+  },
+  "dependencies": {
+    "dotenv": "^6.1.0"
   }
 }
