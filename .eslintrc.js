@@ -3,5 +3,8 @@ module.exports = {
     "es6": true,
     "node": true
   },
-  "extends": "google"
+  "extends": "google",
+  "parserOptions": {
+    "sourceType": "module"
+  }
 }

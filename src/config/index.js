@@ -4,7 +4,8 @@ import 'dotenv/config';
 
 // Required environment variables
 [
-  'NODE_ENV'
+  'NODE_ENV',
+  'MONGO_URI',
 ].forEach((name) => {
   if (!process.env[name]) {
     throw new Error(`Environment variable ${name} is missing`);
@@ -13,6 +14,7 @@ import 'dotenv/config';
 
 export const config = {
   server: {
-    env: process.env.NODE_ENV
-  }
+    env: process.env.NODE_ENV,
+    mongoUri: process.env.MONGO_URI,
+  },
 };
