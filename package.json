@@ -4,7 +4,7 @@
   "description": "Node.js server to handle login API requests",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require babel-core/register",
     "lint": "eslint --ignore-path .gitignore .",
     "start": "nodemon --watch src/ --exec babel-node src/index.js"
   },
@@ -23,6 +23,7 @@
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.8.0",
     "eslint-config-google": "^0.11.0",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.6"
   }
 }
